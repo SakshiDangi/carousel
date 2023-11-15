@@ -12,7 +12,8 @@ body {
   width: 80%;
   height: 70vh;
   margin: auto;
-  background: #1d2630;
+  /* background: #1d2630; */
+  background-image: linear-gradient(70deg, #000, rgb(87, 13, 13));
   border-radius: 10px;
 }
 
@@ -51,10 +52,12 @@ h1 {
   margin-left: 1.4em;
 }
 
-.card p {
+.card h3 {
   color: rgb(23, 22, 22);
   font-weight: 700;
-  font-size: 1em;
+  padding-left: 0.6em;
+  padding-bottom: 0.3em;
+  /* font-size: 1em; */
 }
 
 .rate {
@@ -64,6 +67,7 @@ h1 {
 
 .rating {
   display: flex;
+  align-items: center;
   justify-content: space-evenly;
   width: 55px;
   height: 25px;
@@ -75,7 +79,7 @@ h1 {
   color: #fff;
 }
 
-.star {
+.rating .star {
   color: #fff;
 }
 
@@ -115,3 +119,14 @@ button {
   color: #fbf9f9;
 }
 
+@media only screen and (max-width: 500px) {
+  .card {
+    margin: auto;
+  }
+  h1 {
+    margin-left: 1.5em;
+  }
+  .App p {
+    margin-left: 2.6em;
+  }
+}

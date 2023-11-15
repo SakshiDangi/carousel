@@ -34,7 +34,7 @@ function App() {
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
-      items: 1
+      items: 1,
     }
   };
 
@@ -42,14 +42,19 @@ function App() {
     <div className="App">
       <h1>4700 BC</h1> 
       <p>GOURMET FOOD</p>
-      <Carousel responsive={responsive}>
+      <Carousel responsive={responsive}  
+        removeArrowOnDeviceType={["tablet", "mobile"]}
+        // autoPlay={this.props.deviceType !== "mobile" ? true : false}
+        autoPlaySpeed={1000}
+        keyBoardControl={true}
+        >
         {item.map((values) => {
            return(   
         <div className='card'>
           <div className='img'>
             <img src='img.jpg' alt={values.name} />
           </div>
-          <p>{values.name}</p>
+          <h3>{values.name}</h3>
           <div className='rate'>
             <div className='rating'>
               <CiStar className='star'/>
