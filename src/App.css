@@ -95,6 +95,7 @@ h1 {
   display: flex;
   justify-content: space-evenly;
   margin-top: 1em;
+  margin-left: -1em;
 }
 
 .mrp {
@@ -119,7 +120,32 @@ button {
   color: #fbf9f9;
 }
 
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin: 1.6em 2em;
+
+}
+
+.footer .view {
+  width: 120px;
+}
+
+.logo p {
+  font-size: small;
+}
+
+.logo img {
+  object-fit: contain;
+  width: 100px;
+  height: 30px;
+}
+
 @media only screen and (max-width: 500px) {
+  .App {
+    height: 80vh;
+  }
   .card {
     margin: auto;
   }
@@ -128,5 +154,25 @@ button {
   }
   .App p {
     margin-left: 2.6em;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .view {
+    /* margin-left: 1em; */
+    margin: auto;
+  }
+  .logo {
+    margin: auto;
+    margin-top: 1em;
+  }
+  .logo p {
+    font-size: 0.5em;
+  }
+  .logo img {
+    width: 70px;
+    height: 20px;
+    padding-left: 1.4em;
   }
 }

@@ -73,7 +73,15 @@ function App() {
           </div>
         </div>
          )})} 
-      </Carousel>       
+      </Carousel> 
+
+      <div className='footer' >
+        <button className='view'>VIEW ALL</button>
+        <div className='logo'>
+          <p>POWERED BY</p>
+          <img src='https://cdn.jhattse.com/public/jhattse-logo.svg' alt='logo'/>
+        </div>
+      </div>      
     </div>
   );
 }
